@@ -4,12 +4,10 @@ name: CI
 on:
   push:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0,12 * * *"
 jobs:
   check:
     name: Check
-    runs-on: ubuntu-latest
+    runs-on: hyh-homeserver
     steps:
       - id: check1
         uses: robinraju/release-downloader@v1.7
