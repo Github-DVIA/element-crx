@@ -7,7 +7,7 @@ on:
 jobs:
   check:
     name: Check
-    runs-on: hyh-homeserver
+    runs-on: self-hosted
     steps:
       - id: check1
         uses: robinraju/release-downloader@v1.7
